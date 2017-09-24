@@ -1,0 +1,123 @@
+
+.main-page > .push {
+    margin-bottom: 10px;
+}
+
+.main-page > .push > .push-title {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-page > .push > .push-title > .content  {
+    display: flex;
+    align-items: center;
+}
+
+.main-page > .push > .push-title > .content > .icon {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background: url(../img/icons3.png) no-repeat -141px -78px;
+}
+
+.main-page > .push > .push-title > .content > .name {
+    display: inline-block;
+    font-size: 25px;
+    line-height: 45px;
+    margin-left: 20px;
+}
+
+.main-page > .push > .push-title > .content > .hot {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-top: 10px;
+    transition: all 0.2s linear;
+}
+
+.main-page > .push > .push-title > .content > .hot:hover {
+    color: #52a1d6;
+}
+
+.main-page > .push > .push-title > .info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 260px;
+    height: 35px;
+    background-color: #e5e9ef;
+    border-radius: 4px;
+}
+
+.main-page > .push > .push-title > .info > a {
+    color: #6d757a;
+}
+
+.main-page > .push > .push-ct {
+    margin-top: 10px;
+    height: 168px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-page > .push > .push-ct > .item {
+    width: 160px;
+    height: 160px;
+}
+
+.main-page > .push > .push-ct > .item > a > .pic {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-page > .push > .push-ct > .item > a > .pic > img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+
+.main-page > .push > .push-ct > .item > a > .pic > .mask {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.main-page > .push > .push-ct > .item > a:hover > .pic > .mask {
+    opacity: 0.3;
+}
+
+.main-page > .push > .push-ct > .item > a > .pic > .mask > .time-mark {
+    position: absolute;
+    color: white;
+    right: 5px;
+    bottom: 5px;
+}
+
+.main-page > .push > .push-ct > .item > a > p {
+    margin-top: 5px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.main-page > .push > .push-ct > .item > a:hover > p {
+    color: #52a1d6;
+}
+
+.main-page > .push > .push-ct > .item:last-child {
+    width: 260px;
+    height: 150px;
+}

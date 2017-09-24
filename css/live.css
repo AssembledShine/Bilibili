@@ -1,0 +1,42 @@
+.live {
+    display: flex;
+    justify-content: space-between;
+}
+
+.live > .live-left {
+    width: 700px;
+}
+
+.live > .live-left > .live-title {
+    height: 45px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+}
+
+.live > .live-left > .live-title > .icon {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background: url(../img/icons3.png) no-repeat -140px -654px;
+}
+
+.live > .live-left > .live-title > .name {
+    font-size: 25px;
+    margin-left: 20px;
+    line-height: 45px;
+}
+
+.live > .live-left > .live-title > .num {
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #99a2aa;
+}
+
+.live > .live-left > .live-title > .num > span {
+    color: #00a1d6;
+}
+
+.live > .live-right {
+    width: 260px;
+}

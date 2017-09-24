@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bilibili</title>
+
+    <script src="lib/jquery-3.2.1.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/recommend.css">
+    <link rel="stylesheet" href="css/push.css">
+    <link rel="stylesheet" href="css/live.css">
+
+</head>
+<body>
+
+<div class="header">
+    <div class="nav-top">
+        <div class="nav-ct w">
+            <div class="menu-nav">
+                <ul>
+                    <li><a href="#" class="top-link" target="_blank">主站</a></li>
+                    <li><a href="#" class="top-link">画友</a></li>
+                    <li><a href="#" class="top-link">游戏中心</a></li>
+                    <li><a href="#" class="top-link">直播</a></li>
+                    <li><a href="#" class="top-link">周边</a></li>
+                    <li><a href="#" class="top-link">移动端</a></li>
+                </ul>
+            </div>
+            <div class="user-nav">
+                <ul>
+                    <li><a href="#" class="top-link">头像</a></li>
+                    <li><a href="#" class="top-link">消息</a></li>
+                    <li><a href="#" class="top-link">动态</a></li>
+                    <li><a href="#" class="top-link">收藏夹</a></li>
+                    <li><a href="#" class="top-link">历史</a></li>
+                    <li><a href="#" class="top-link contribute">投稿</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav-img">
+        <div class="img-content w">
+            <div class="top-logo">
+                <img src="img/header/top-logo.png" alt="">
+            </div>
+            <div class="extra">
+                <a href="#" class="rank"><span>排行榜</span></a>
+                <div class="search">
+                    <form action="">
+                        <input type="text" placeholder="来验证一下柯南的那些逆天道具" id="search">
+                        <button></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-guide">
+        <div class="guide-wrapper w">
+            <ul class="nav clearfix">
+
+                <li><a href="#"><span>首页</span></a></li>
+
+                <li>
+                    <a href="#">
+                        <span>动画</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span class="icon"></span><span>MAD·AMV</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>MMD·3D</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>短片·手书·配音</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>综合</span></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>番剧</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span class="icon"></span><span>连载动画</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>完结动画</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>资讯</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>官方延伸</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>新番时间表</span></a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span>国创</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span class="icon"></span><span>国产动画</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>国产原创相关</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>布袋戏</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>资讯</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>新番时间表</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>国产动画索引</span></a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span>音乐</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span class="icon"></span><span>原创音乐</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>翻唱</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>VOCALOID·UTAU</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>演奏</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>三次元音乐</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>OP/ED/OST</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>音乐选集</span></a></li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span>舞蹈</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span class="icon"></span><span>宅舞</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>三次元舞蹈</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>舞蹈教程</span></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>游戏</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                    <ul>
+                        <li><a href="#"><span class="icon"></span><span>单机游戏</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>电子竞技</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>手机游戏</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>网络游戏</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>桌游棋牌</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>GMV</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>音游</span></a></li>
+                        <li><a href="#"><span class="icon"></span><span>Mugen</span></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>科技</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>生活</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>鬼畜</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>时尚</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>广告</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>娱乐</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span>影视</span>
+                        <div class="num"><span>99</span></div>
+                    </a>
+                </li>
+
+                <li class="square"><a href="#"><span>广场</span></a></li>
+                <li class="square"><a href="#"><span>直播</span></a></li>
+                <li class="square"><a href="#"><span>小黑屋</span></a></li>
+
+            </ul>
+
+            <a href="#">
+                <div><img src="img/header/guide-gif.gif" alt=""></div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="main-page w">
+    <div class="recommend">
+        <div class="rec-carousel">
+            <ul class="slide clearfix">
+                <li><a href="#"><img src="img/recommend/rec-carousel-1.webp" alt=""></a></li>
+                <li><a href="#"><img src="img/recommend/rec-carousel-2.webp" alt=""></a></li>
+                <li><a href="#"><img src="img/recommend/rec-carousel-3.webp" alt=""></a></li>
+                <li><a href="#"><img src="img/recommend/rec-carousel-4.webp" alt=""></a></li>
+                <li><a href="#"><img src="img/recommend/rec-carousel-5.webp" alt=""></a></li>
+            </ul>
+            <ul class="dot">
+                <li class="active"><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+        </div>
+        <div class="rec-ct">
+            <div class="rec-item">
+                <a href="#">
+                    <img src="img/recommend/rec-1.webp" alt="">
+                    <div class="info-card">
+                        <p>【老番茄】高考完的那一晚，你在想些什么？</p>
+                        <p class="info">
+                            <span>UP主：老番茄</span>
+                            <span>播放：43.9万</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="#">
+                    <img src="img/recommend/rec-2.webp" alt="">
+                    <div class="info-card">
+                        <p>【Re:CREATORS 完整版OP（中日歌词）】【泽野弘之新曲】</p>
+                        <p class="info">
+                            <span>UP主：我丶好期待</span>
+                            <span>播放：11.8万</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="#">
+                    <img src="img/recommend/rec-3.webp" alt="">
+                    <div class="info-card">
+                        <p>【综漫/暖】愿你被这世界温柔以待</p>
+                        <p class="info">
+                            <span>UP主：蒙奇「D」路飞</span>
+                            <span>播放：10.3万</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="#">
+                    <img src="img/recommend/rec-4.webp" alt="">
+                    <div class="info-card">
+                        <p>【火影忍者】无论是谁，不过一袭剪影</p>
+                        <p class="info">
+                            <span>UP主：Lightの</span>
+                            <span>播放：15.0万</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="#">
+                    <img src="img/recommend/rec-5.webp" alt="">
+                    <div class="info-card">
+                        <p>【末日风格】于外星吟唱的miku</p>
+                        <p class="info">
+                            <span>UP主：彧弟</span>
+                            <span>播放：1.2万</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="rec-item">
+                <a href="#">
+                    <img src="img/recommend/rec-6.webp" alt="">
+                    <div class="info-card">
+                        <p>【该细还得细】FGO国服鬼哭醉梦魔京罗生门/茨木童子攻略</p>
+                        <p class="info">
+                            <span>UP主：削人棍专用BGM</span>
+                            <span>播放：8.6万</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="push">
+        <div class="push-title">
+            <div class="content">
+                <span class="icon"></span>
+                <span class="name">推广</span>
+                <a href="#" class="hot">一起来跳舞吧，趁我们在校园相遇</a>
+            </div>
+            <div class="info">
+                <a href="#">在线人数：491185</a>
+                <span>|</span>
+                <a href="#">最新投稿：5518</a>
+            </div>
+        </div>
+        <div class="push-ct">
+            <div class="item">
+                <a href="#">
+                    <div class="pic">
+                        <img src="img/push/push-1.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">20:27</span>
+                        </div>
+                    </div>
+                    <p>灵吸怪介绍下篇---更多关于灵吸怪的奥秘</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="pic">
+                        <img src="img/push/push-2.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">20:27</span>
+                        </div>
+                    </div>
+                    <p>《开封奇谈-这个包公不太行》第4话更新</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="pic">
+                        <img src="img/push/push-3.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">20:27</span>
+                        </div>
+                    </div>
+                    <p>没有维多利亚的秘密，只有碳纤维的秘密</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="pic">
+                        <img src="img/push/push-4.webp" alt="">
+                        <div class="mask">
+                            <span class="time-mark">20:27</span>
+                        </div>
+                    </div>
+                    <p>【纪录片/BBC】百万美国公主 Million Dollar American Princesses</p>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="img/push/push-ad.webp" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="live">
+        <div class="live-left">
+            <div class="live-title">
+                <span class="icon"></span>
+                <span class="name">正在直播</span>
+                <span class="num">
+                    当前共有<span>3752</span>个在线直播
+                </span>
+                <a href="#" class="hot">
+                    <span class="icon"></span>
+                    <span>233秒居然能做这些！</span>
+                </a>
+            </div>
+            <div class="live-ct">
+
+            </div>
+        </div>
+        <div class="live-right">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
