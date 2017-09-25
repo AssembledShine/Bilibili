@@ -85,4 +85,12 @@ $(function () {
             timer = setInterval(autoScroll, 3000)
         })
     }
+
+    // ----------------------------------
+
+    var tabArr = $('.tab-panel');
+    tabArr.mouseenter(function () {
+        console.log(this);
+        tabArr.removeClass('on').eq($(this).index()).addClass('on');
+    });
 })
