@@ -166,12 +166,12 @@
     padding: 6px 0;
 }
 
-.nav-guide > .guide-wrapper > ul {
+.nav-guide > .guide-wrapper > .nav {
     height: 50px;
     display: inline-block;
 }
 
-.nav-guide > .guide-wrapper > ul > li {
+.nav-guide > .guide-wrapper > .nav > li {
     position: relative;
     float: left;
     display: block;
@@ -179,13 +179,13 @@
     font-size: 14px;
 }
 
-.nav-guide > .guide-wrapper > ul > li > a {
+.nav-guide > .guide-wrapper > .nav > li > a {
     display: block;
     height: 50px;
     color: #333;
 }
 
-.nav-guide > .guide-wrapper > ul > li > a > span {
+.nav-guide > .guide-wrapper > .nav > li > a > span {
     display: inline-block;
     line-height: 50px;
     height: 40px;
@@ -193,15 +193,15 @@
     padding-top: 8px;
 }
 
-.nav-guide > .guide-wrapper > ul > li:nth-child(1) > a {
+.nav-guide > .guide-wrapper > .nav > li:nth-child(1) > a {
     background: url("../img/icons.png") no-repeat -658px -1170px;
 }
 
-.nav-guide > .guide-wrapper > ul > li:nth-child(1) > a > span {
+.nav-guide > .guide-wrapper > .nav > li:nth-child(1) > a > span {
     margin-left: 0px;
 }
 
-.nav-guide > .guide-wrapper > ul > li > a > .num {
+.nav-guide > .guide-wrapper > .nav > li > a > .num {
     position: absolute;
     left: 0;
     top: 8px;
@@ -209,7 +209,7 @@
     text-align: center;
 }
 
-.nav-guide > .guide-wrapper > ul > li > a > .num > span {
+.nav-guide > .guide-wrapper > .nav > li > a > .num > span {
     padding: 1px 3px;
     height: 14px;
     background-color: #ffafc9;
@@ -220,23 +220,23 @@
     vertical-align: top;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square {
+.nav-guide > .guide-wrapper > .nav > li.square {
     margin: 0 10px;
     text-align: center;
     line-height: 50px;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square:hover > a > span {
+.nav-guide > .guide-wrapper > .nav > li.square:hover > a > span {
     color: #84a1d6;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square > a {
+.nav-guide > .guide-wrapper > .nav > li.square > a {
     display: block;
     position: relative;
     font-size: 14px;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square > a > span {
+.nav-guide > .guide-wrapper > .nav > li.square > a > span {
     padding: 0 0 0 22px;
     height: 50px;
     margin: 0 !important;
@@ -244,15 +244,15 @@
     line-height: 50px;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square:nth-child(15) {
+.nav-guide > .guide-wrapper > .nav > li.square:nth-child(15) {
     background: url("../img/icons.png") no-repeat -727px -519px;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square:nth-child(16) {
+.nav-guide > .guide-wrapper > .nav > li.square:nth-child(16) {
     background: url("../img/icons.png") no-repeat -664px -518px;
 }
 
-.nav-guide > .guide-wrapper > ul > li.square:nth-child(17) {
+.nav-guide > .guide-wrapper > .nav > li.square:nth-child(17) {
     background: url("../img/icons.png") no-repeat -727px -519px;
 }
 
@@ -263,7 +263,7 @@
     padding: 6px 0;
 }
 
-.nav-guide > .guide-wrapper > ul > li > ul {
+.nav-guide > .guide-wrapper > .nav > li > ul {
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
@@ -276,7 +276,7 @@
     z-index: 999;
 }
 
-.nav-guide > .guide-wrapper > ul > li > ul > li {
+.nav-guide > .guide-wrapper > .nav > li > ul > li {
     font-size: 12px;
     line-height: 20px;
     width: 150px;
@@ -284,17 +284,17 @@
     transition: all .2s;
 }
 
-.nav-guide > .guide-wrapper > ul > li > ul > li:hover {
+.nav-guide > .guide-wrapper > .nav > li > ul > li:hover {
     background-color: #e5e9ef;
     padding-left: 2px;
 }
 
-.nav-guide > .guide-wrapper > ul > li > ul > li > a {
+.nav-guide > .guide-wrapper > .nav > li > ul > li > a {
     display: block;
     padding: 5px 15px 5px 5px;
 }
 
-.nav-guide > .guide-wrapper > ul > li > ul > li > a > .icon {
+.nav-guide > .guide-wrapper > .nav > li > ul > li > a > .icon {
     background-image: url(../img/icons2.png);
     background-position: 9px -1615px;
     display: inline-block;
