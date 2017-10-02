@@ -1,0 +1,307 @@
+.bangumi-schedule {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bangumi-schedule > .bangumi-left {
+    width: 700px;
+    height: 100%;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title {
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .icon {
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background: url(../img/icons3.png) no-repeat -141px -142px;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .name {
+    font-size: 25px;
+    margin-left: 20px;
+    line-height: 45px;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .week {
+    width: 440px;
+    height: 30px;
+    margin-left: 20px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .week > .w-item {
+    position: relative;
+    width: 55px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid #ccd0d7;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .week > .on {
+    color: #00a1d6;
+    border-bottom-color: #00a1d6;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .week > .on::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -3px;
+    width: 0;
+    height: 0;
+    border: 3px dashed #00a1d6;
+    border-bottom-style: solid;
+    border-top: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .more {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #f25d8e;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    transition: all 0.3s;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .more:hover {
+    background-color: #f45d8f;
+    color: white;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .more > span {
+    font-family: Consolas;
+    margin-left: 5px;
+}
+
+.bangumi-schedule > .bangumi-left > .bangumi-title > .more:hover > span {
+    color: white;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule {
+    position: relative;
+    margin-top: 10px;
+    width: 700px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .on {
+    display: flex;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item {
+    width: 180px;
+    margin-right: 45px;
+    margin-bottom: 35px;
+
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a > .logo {
+    position: relative;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a > .logo > img {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a > .info {
+    width: 96px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a > .info > .title {
+    width: 96px;
+    height: 32px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a > .info > .text > span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin-left: 5px;
+    line-height: 20px;
+    text-align: center;
+    background-color: #b8c0cc;
+    border-radius: 5px;
+    color: white;
+}
+
+.bangumi-schedule > .bangumi-left > .schedule > .sch-item > .item > a > .info > .text > .new {
+    background-color: #ff8eb3;
+}
+
+.bangumi-schedule > .bangumi-right {
+    width: 260px;
+    height: 100%;
+}
+
+.bangumi-schedule > .bangumi-right > .title {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bangumi-schedule > .bangumi-right > .title > p {
+    font-size: 18px;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle {
+    position: relative;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle > div {
+    width: 63px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccd0d7;
+    border-radius: 4px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle:hover > div {
+    border-bottom: 0px;
+    border-radius: 4px 4px 0 0;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle > div > .icon {
+    display: inline-block;
+    width: 12px;
+    height: 6px;
+    background: url("../img/icons3.png") no-repeat -475px -157px;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle > .dropdown-list {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 63px;
+    border: 1px solid #ccd0d7;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 999;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle:hover > .dropdown-list {
+    display: block;
+}
+
+.bangumi-schedule > .bangumi-right > .title > .toggle > .dropdown-list > li {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.bangumi-schedule > .bangumi-right > .rank {
+    width: 260px;
+    height: 376px;
+    margin-top: 10px;
+}
+
+.bangumi-schedule > .bangumi-right > .rank > .a-item {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+.bangumi-schedule > .bangumi-right > .rank > .a-item > .num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    background-color: #b8c0cc;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.bangumi-schedule > .bangumi-right > .rank > .a-item > .num-top {
+    background-color: #f25d8e;
+}
+
+.bangumi-schedule > .bangumi-right > .rank > .a-item > a > .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bangumi-schedule > .bangumi-right > .rank > .a-item > a > .title > p {
+    display: inline-block;
+}
+
+.bangumi-schedule > .bangumi-right > .rank > .a-item > a > .title > p:last-child {
+    color: #b3a2b2;
+}
+
+.bangumi-schedule > .bangumi-right > .see-more {
+    height: 24px;
+    line-height: 24px;
+    background-color: #e5e9ef;
+    text-align: center;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.bangumi-schedule > .bangumi-right > .see-more:hover {
+    background-color: #ccd0d7;
+}
+
+.bangumi-schedule > .bangumi-right > .see-more > span {
+    font-family: Consolas;
+}

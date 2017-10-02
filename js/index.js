@@ -7,7 +7,80 @@ $(function () {
     liveTabSwitch();
 
     liveBannerCarousel();
+
+    animeTabSwitch();
+
+    bangumiTabSwitch();
+
+    bangumiBannerCarousel();
+
+    sideNavScroll();
 })
+
+function sideNavScroll() {
+    var val = $('.side-nav').offset().top;
+    var lastTop = 0;
+    var num = 0;
+    window.onscroll = function (e) {
+        var top = scroll().top;
+        var disY = top - lastTop;
+        lastTop = top;
+        if (top > val) {
+            var anim = {'top': top - val};
+            num = top - val;
+        } else if (disY < 0) {
+            if (top - val <= 0) {
+                var anim = {'top': 0};
+                num = 0;
+            } else {
+                var anim = {'top': top - val};
+                num = top - val;
+            }
+        }
+        $('.side-nav').css('top', num);
+    }
+    $('.go-top').click(function () {
+        $('body,html').animate({scrollTop: 0}, 200);
+    });
+}
+
+function scroll() {
+    return {
+        top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop,
+        left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft
+    }
+}
+
+function bangumiBannerCarousel() {
+    bannerCarousel($('.bangumi > .bangumi-right > .carousel-inside'));
+}
+
+function bangumiTabSwitch() {
+    var tabArr = $('.bangumi-schedule > .bangumi-left > .bangumi-title > .week > .w-item');
+    var tabContent = $('.bangumi-schedule > .bangumi-left > .schedule > .sch-item');
+    tabArr.mouseenter(function () {
+        tabArr.removeClass('on').eq($(this).index()).addClass('on');
+        tabContent.removeClass('on').eq($(this).index()).addClass('on');
+    });
+}
+
+function animeTabSwitch() {
+    var tabArr = $('.anime > .anime-right > .title > .tab > .tab-panel');
+    var tabContent = $('.anime > .anime-right > .tab-item > .carousel-outside');
+    tabSwitch(tabArr, tabContent);
+}
+
+function tabSwitch($tab, $content) {
+    var tabArr = $tab;
+    var tabContent = $content;
+    tabArr.mouseenter(function () {
+        tabArr.removeClass('on').eq($(this).index()).addClass('on');
+        if (tabContent != undefined) {
+            var left = -$(this).index() * tabContent.parent().width();
+            tabContent.css('left', left);
+        }
+    });
+}
 
 function bannerCarousel($bannerCTNR) {
     var bannerCTNR = $bannerCTNR;
@@ -68,13 +141,8 @@ function liveBannerCarousel() {
 // 直播Tab切换
 function liveTabSwitch() {
     var tabArr = $('.live > .live-right > .tab > .tab-panel');
-    var tabContent = $('.tab-item > .carousel-outside');
-    tabArr.mouseenter(function () {
-        tabArr.removeClass('on').eq($(this).index()).addClass('on');
-        var left = -$(this).index() * tabContent.parent().width();
-        tabContent.css('left', left);
-    });
-
+    var tabContent = $('.live > .live-right > .tab-item > .carousel-outside');
+    tabSwitch(tabArr, tabContent);
 }
 
 // 二级导航栏添加鼠标移入移除监听

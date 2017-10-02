@@ -1,0 +1,137 @@
+.footer {
+    width: 100%;
+    background-color: #f6f9fa;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer > .footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    height: 100%;
+    font-size: 14px;
+}
+
+.footer > .footer-top > .left {
+    width: 300px;
+    border-right: 1px solid #e5e9ef;
+}
+
+.footer > .footer-top > .left > .title {
+    color: #99a2aa;
+    margin-bottom: 22px;
+}
+
+.footer > .footer-top > .left > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer > .footer-top > .left > .wrapper > div {
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+.footer > .footer-top > .middle {
+    width: 301px;
+    border-right: solid 1px #e5e9ef;
+}
+
+.footer > .footer-top > .middle > .title {
+    color: #99a2aa;
+    margin-bottom: 22px;
+}
+
+.footer > .footer-top > .middle > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer > .footer-top > .middle > .wrapper > div {
+    width: 100px;
+    margin-bottom: 16px;
+}
+
+.footer > .footer-top > .right {
+    width: 300px;
+}
+
+.footer > .footer-top > .right > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer > .footer-top > .right > .wrapper > div {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer > .footer-top > .right > .wrapper > .phone > a > span {
+    background-image: url(../img/icons5.png);
+    background-position: -1024px -194px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.footer > .footer-top > .right > .wrapper > .weibo > a > span {
+    background-image: url(../img/icons5.png);
+    background-position: -1024px -322px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.footer > .footer-top > .right > .wrapper > .weixin > a > span {
+    background-image: url(../img/icons5.png);
+    background-position: -1024px -66px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.footer > .footer-top > .right > .wrapper > div > span {
+    display: inline-block;
+}
+
+.footer > .footer-bottom {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.footer > .footer-bottom > .logo {
+    margin-right: 20px;
+}
+
+.footer > .footer-bottom > .text {
+    color: #99a2aa;
+    line-height: 24px;
+}
+
+.footer > .footer-bottom > .text > .tip {
+    display: flex;
+    align-items: center;
+}
+
+.footer > .footer-bottom > .text > .tip > img {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.footer > .footer-bottom > .text > .tip > span {
+    width: 16px;
+    height: 16px;
+    background: url(../img/icons5.png) no-repeat -1367px -88px;;
+    display: inline-block;
+    vertical-align: middle;
+}
