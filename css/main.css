@@ -35,13 +35,20 @@
 }
 
 .side-nav > .wrapper > .go-top {
+    width: 48px;
+    height: 48px;
+}
+
+.side-nav > .wrapper > .go-top > .icon {
+    display: inline-block;
     border-top: 1px solid #e5e9ef;
     background-image: url(../img/icons3.png);
+    width: 48px;
     height: 48px;
     background-position: -648px -72px;
     transition: background-color 0.3s;
 }
 
-.side-nav > .wrapper > .item:hover.go-top {
+.side-nav > .wrapper > .item:hover.go-top > .icon {
     background-position: -714px -72px;
 }

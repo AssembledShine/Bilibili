@@ -21,7 +21,7 @@ function sideNavScroll() {
     var val = $('.side-nav').offset().top;
     var lastTop = 0;
     var num = 0;
-    window.onscroll = function (e) {
+    window.onscroll = function () {
         var top = scroll().top;
         var disY = top - lastTop;
         lastTop = top;
@@ -38,6 +38,8 @@ function sideNavScroll() {
             }
         }
         $('.side-nav').css('top', num);
+        var top = $('.push').offset().top - $(this).scrollTop();
+        console.log(top);
     }
     $('.go-top').click(function () {
         $('body,html').animate({scrollTop: 0}, 200);
